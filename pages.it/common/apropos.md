@@ -9,3 +9,7 @@
 - Cerca senza limitare l'output alla larghezza del terminale:
 
 `apropos -l {{qualcosa}}`
+
+- Cerca pagine che contengono tutte le espressioni specificate:
+
+`apropos {{regex_1}} -a {{regex_2}} -a {{regex_3}}`
