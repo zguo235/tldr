@@ -7,6 +7,10 @@
 
 `ack {{foo}}`
 
+- Trova file di un determinato tipo:
+
+`ack --ruby {{foo}}`
+
 - Trova file Ruby contenenti una specifica parola chiave:
 
 `ack --ruby {{each_with_object}}`
