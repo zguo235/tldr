@@ -20,6 +20,10 @@
 
 `bash -x {{file.sh}}`
 
+- Esegui dei comandi da un file, terminando al primo errore:
+
+`bash -e {{file.sh}}`
+
 - Esegui comandi da standard input:
 
 `bash -s`
