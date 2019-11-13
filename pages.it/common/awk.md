@@ -26,3 +26,11 @@
 - Stampa una liena ogni tre iniziando dalla prima:
 
 `awk 'NR%3==1' {{nome_file}}`
+
+- Stampa tutti i valori dalla terza colonna in poi:
+
+`awk '{ s = ""; for (i=3; i <= NF; i++) s = s $i " "; print s }'`
+
+- Stampa valori differenti in base a determinate condizioni:
+
+`awk '{if ($1 == "foo") print "Match esatto foo"; else if ($1 ~ "bar") print "Match parziale bar"; else print "Baz"}'`
