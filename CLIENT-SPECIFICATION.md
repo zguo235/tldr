@@ -13,7 +13,7 @@ In order to aid the understanding of this specification document, a number of te
 
 ### Page
 
-tldr-pages consists of multiple _pages_ - each of which describes a specific command.
+tldr-pages consists of multiple _pages_ - each of which describes a specific command. These pages are displayed by tldr clients.
 
 ### Platform
 
@@ -154,7 +154,9 @@ For example, a user has a client on windows, and requests the `apt` page. The cl
 
 Steps #3 and #4 may be done in either order.
 
-It is possible that due to this page resolution logic, the client may show a page which does not belong to the host platform because a page can reside in `common`, and not be present on the host platform. Clients must not assume that a given command is always executable on the host platform.
+It is possible that due to this page resolution logic, the client may show a page for a command which is not present on the host platform (e.g. because it's for a different operating system, or isn't installed).
+
+Clients MUST NOT assume that the command behind a given page is always executable on the host platform.
 
 #### If a page is not found
 
