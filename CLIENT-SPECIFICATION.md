@@ -140,7 +140,7 @@ After transparently replacing spaces (` `) with dashes (`-`), clients have sever
 
 ### Platform
 
-Clients MUST default to displaying the page associated with the platform on which the client is running.
+Clients MUST default to displaying the page associated with the platform on which the client is running where possible.
 For example, a client running on _Windows 10_ will default to displaying pages from the `windows` platform.
 Clients MAY provide a user-configurable option to override this behaviour, however.
 
@@ -230,6 +230,7 @@ Caching SHOULD be done according to the user's language configuration (if any), 
      - Clarified that clients should display pages
      - Clarified section about displaying pages for commands that aren't available on the host system
      - Clarified that calling your client `tldr` is OPTIONAL
+     - Clients must default to showing pages based on the user's platform where possible
 
  - [v1.3, June 11th 2020](https://github.com/tldr-pages/tldr/blob/master/CLIENT-SPECIFICATION.md) (#4101)
    - Clarified fallback to English in the language resolution algorithm.
