@@ -29,6 +29,9 @@ For example, if the command `foo` is common to `mac`, `windows`, and `linux` but
 
 This section describes the standardised command-line interface (CLI) for clients implementing one. Clients that do not provide a CLI can ignore this section.
 
+In this specification, it is assumed that the client is named `tldr`, though this is OPTIONAL.
+
+
 ### Arguments
 
 A number of command-line options MUST be supported (unless otherwise specified) if a CLI is implemented:
@@ -222,6 +225,11 @@ Caching SHOULD be done according to the user's language configuration (if any), 
 
 
 ## Changelog
+
+ - [v1.5, August 31st 2020](https://github.com/tldr-pages/tldr/blob/master/CLIENT-SPECIFICATION.md)
+     - Clarified that clients should display pages
+     - Clarified section about displaying pages for commands that aren't available on the host system
+     - Clarified that calling your client `tldr` is OPTIONAL
 
  - [v1.3, June 11th 2020](https://github.com/tldr-pages/tldr/blob/master/CLIENT-SPECIFICATION.md) (#4101)
    - Clarified fallback to English in the language resolution algorithm.
