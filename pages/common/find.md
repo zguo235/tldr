@@ -34,3 +34,6 @@
 - Find empty (0 byte) files and delete them:
 
 `find {{root_path}} -type {{f}} -empty -delete`
+
+- Find and sort by date modified
+`find {{root_path}} -printf "%T@ %Tc %p\n" | sort -n`
